@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind & daisy ui cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font Poppins link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+    <!-- font awesome link  -->
+    <script src="https://kit.fontawesome.com/985549e602.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/hero.png" type="image/x-icon">
+    <title>SPICY NOODLES</title>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <style>
+        *::selection{
+          background-color: rgb(190, 33, 33);
+          color: white;
+        }
+        .font-Poppins{
+            font-family: 'Poppins', sans-serif;
+        }
+      </style>
+</head>
+<body class="font-Poppins bg-gradient-to-r from-red-950 to-red-700 px-[5%] lg:px-5 xl:px-[5%]">
+    <nav class="navbar text-white p
+    l-0 sticky top-0 bg-gradient-to-r from-red-950 to-red-700 z-50">
+        <div>
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden  pl-0" >
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-gradient-to-r from-red-950 to-red-700 rounded-box w-36 bg-opacity-75">
+              <li><a href="#HOME">HOME</a></li>
+              <li><a href="#MENU">MENU</a></li>
+              <li><a href="#ORDER">ORDER</a></li>
+              <li><a href="#CATEGORIES">CATEGORIES</a></li>
+              <li><a href="#ABOUT">ABOUT</a></li>
+              <li><a href="#LOCATION">LOCATION</a></li>
+            </ul>
+          </div>
+          <a class="uppercase text-xl md:text-3xl font-bold">SPICY NOODLES</a>
+        </div>
+        <div class=" hidden lg:flex ml-auto" >
+          <ul class="menu menu-horizontal px-1  xl:text-lg">
+            <li><a href="#HOME" class="hover:bg-red-950 hover:text-white hover:border-white border-[1px] border-transparent">HOME</a></li>
+            <li><a href="#MENU" class="hover:bg-red-950 hover:text-white hover:border-white border-[1px] border-transparent">MENU</a></li>
+            <li><a href="#ORDER" class="hover:bg-red-950 hover:text-white hover:border-white border-[1px] border-transparent">ORDER</a></li>
+            <li><a href="#CATEGORIES" class="hover:bg-red-950 hover:text-white hover:border-white border-[1px] border-transparent">CATEGORIES</a></li>
+            <li><a href="#ABOUT" class="hover:bg-red-950 hover:text-white hover:border-white border-[1px] border-transparent">ABOUT</a></li>
+            <li><a href="#LOCATION" class="hover:bg-red-950 hover:text-white hover:border-white border-[1px] border-transparent">LOCATION</a></li>
+          </ul>
+        </div>
+        <div class="ml-auto lg:ml-0">
+          <a class="btn bg-gradient-to-r from-red-900 to-red-700 text-white outline-none border-white uppercase">Sing up</a>
+        </div>
+    </nav>
+    <header id="HOME" class="flex flex-col-reverse lg:flex-row justify-between items-center gap-10 py-5 text-center lg:text-left">
+        <div class="flex-1 text-white">
+            <h1 class="text-4xl md:text-6xl xl:text-7xl font-bold">DELICIOUS <br>NOODLES DISH</h1>
+            <p class="text-lg md:text-xl py-6 md:py-8 xl:py-10">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING
+                ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET N
+                NCIDIDUNT UT LABORE LACUS VEL FACILISIS.</p>
+            <button class="btn bg-gradient-to-r from-red-900 to-red-700 text-white outline-none border-white uppercase">learn more</button>
+        </div>
+        <div class="flex-1 relative">
+          <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="./images/hero.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2">
+                <a href="#slide3" class="btn btn-circle btn-sm text-white border-[1px] border-white bg-transparent  bg-gradient-to-r from-red-900 to-red-700 ">❮</a> 
+                <a href="#slide2" class="btn btn-circle btn-sm text-white border-[1px] border-white bg-transparent  bg-gradient-to-r from-red-900 to-red-700 ">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="./images/hero2.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2">
+                <a href="#slide1" class="btn btn-circle btn-sm text-white border-[1px] border-white bg-transparent  bg-gradient-to-r from-red-900 to-red-700 ">❮</a> 
+                <a href="#slide3" class="btn btn-circle btn-sm text-white border-[1px] border-white bg-transparent  bg-gradient-to-r from-red-900 to-red-700 ">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="./images/hero3.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2">
+                <a href="#slide2" class="btn btn-circle btn-sm text-white border-[1px] border-white bg-transparent  bg-gradient-to-r from-red-900 to-red-700 ">❮</a> 
+                <a href="#slide1" class="btn btn-circle btn-sm text-white border-[1px] border-white bg-transparent  bg-gradient-to-r from-red-900 to-red-700 ">❯</a>
+              </div>
+            </div> 
+          </div>
+          <div class="flex justify-center w-full py-2 gap-2 absolute -bottom-2 md:bottom-5">
+            <a href="#slide1" class="btn btn-xs bg-gradient-to-r from-red-900 to-red-700 text-white border-[1px] border-white">1</a> 
+            <a href="#slide2" class="btn btn-xs bg-gradient-to-r from-red-900 to-red-700 text-white border-[1px] border-white">2</a> 
+            <a href="#slide3" class="btn btn-xs bg-gradient-to-r from-red-900 to-red-700 text-white border-[1px] border-white">3</a> 
+          </div>
+        </div>
+    </header>
+    <section id="MENU" class="my-8 md:my-14 xl:my-24 text-center text-white py-10">
+      <h1 class="text-4xl md:text-6xl xl:text-7xl font-bold mb-5 md:mb-10">OUR MENU</h1>
+      <div class="flex flex-col lg:flex-row justify-center lg:justify-between gap-5 xl:gap-10 my-5 px-2 py-5 md:p-10 bg-gradient-to-r from-red-950 to-red-700 shadow-md hover:shadow-2xl shadow-red-500 hover:scale-105 hover:ease-in-out hover:duration-1000 border-[1px] rounded text-center md:text-start">
+        <div class="flex flex-col md:flex-row flex-1 items-center justify-center md:justify-between gap-5 xl:gap-10  ">
+          <h1 class="text-xl md:text-3xl xl:text-4xl font-bold">PEKING ROASTED DUCK</h1>
+          <div>
+            <i class="fa-solid fa-spoon text-5xl"></i>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row flex-1 items-center justify-center md:justify-between gap-5 xl:gap-10 ">
+          <p class="text-base md:text-xl">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD FACILISIS.</p>
+          <i class="fa-solid fa-cart-shopping text-5xl cursor-pointer"></i>
+        </div>
+      </div>
+      <div class="flex flex-col lg:flex-row justify-center lg:justify-between gap-5 xl:gap-10 my-5 px-2 py-5 md:p-10 bg-gradient-to-r from-red-950 to-red-700 shadow-md hover:shadow-2xl shadow-red-500 hover:scale-105 hover:ease-in-out hover:duration-1000 border-[1px] rounded text-center md:text-start">
+        <div class="flex flex-col md:flex-row flex-1 items-center justify-center md:justify-between gap-5 xl:gap-10  ">
+          <h1 class="text-xl md:text-3xl xl:text-4xl font-bold">KUNG PAO CHICKEN</h1>
+          <div>
+            <i class="fa-solid fa-spoon text-5xl"></i>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row flex-1 items-center justify-center md:justify-between gap-5 xl:gap-10 ">
+          <p class="text-base md:text-xl">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD FACILISIS.</p>
+          <i class="fa-solid fa-cart-shopping text-5xl cursor-pointer"></i>
+        </div>
+      </div>
+      <div class="flex flex-col lg:flex-row justify-center lg:justify-between gap-5 xl:gap-10 my-5 px-2 py-5 md:p-10 bg-gradient-to-r from-red-950 to-red-700 shadow-md hover:shadow-2xl shadow-red-500 hover:scale-105 hover:ease-in-out hover:duration-1000 border-[1px] rounded text-center md:text-start">
+        <div class="flex flex-col md:flex-row flex-1 items-center justify-center md:justify-between gap-5 xl:gap-10  ">
+          <h1 class="text-xl md:text-3xl xl:text-4xl font-bold">SWEET AND SOUR PORK</h1>
+          <div>
+            <i class="fa-solid fa-spoon text-5xl"></i>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row flex-1 items-center justify-center md:justify-between gap-5 xl:gap-10 ">
+          <p class="text-base md:text-xl">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD FACILISIS.</p>
+          <i class="fa-solid fa-cart-shopping text-5xl cursor-pointer"></i>
+        </div>
+      </div>
+      <div class="flex flex-col lg:flex-row justify-center lg:justify-between gap-5 xl:gap-10 my-5 px-2 py-5 md:p-10 bg-gradient-to-r from-red-950 to-red-700 shadow-md hover:shadow-2xl shadow-red-500 hover:scale-105 hover:ease-in-out hover:duration-1000 border-[1px] rounded text-center md:text-start">
+        <div class="flex flex-col md:flex-row flex-1 items-center justify-center md:justify-between gap-5 xl:gap-10  ">
+          <h1 class="text-xl md:text-3xl xl:text-4xl font-bold">MA PO TOFU</h1>
+          <div>
+            <i class="fa-solid fa-spoon text-5xl"></i>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row flex-1 items-center justify-center md:justify-between gap-5 xl:gap-10 ">
+          <p class="text-base md:text-xl">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD FACILISIS.</p>
+          <i class="fa-solid fa-cart-shopping text-5xl cursor-pointer"></i>
+        </div>
+      </div>
+    </section>
+    <section id="ORDER" class="my-8 md:my-14 xl:my-24 text-center text-white py-10 relative">
+      <h1 class="text-4xl md:text-6xl xl:text-7xl font-bold mb-5 md:mb-10">PRODUCT</h1>
+      <div class="carousel w-full">
+        <div id="productSlide1" class="carousel-item relative w-full">
+          <div class="flex  justify-center items-center md:gap-5 py-5 text-center md:text-left relative">
+            <div class="flex-1 ">
+              <img src="./images/p1.png" class="w-4/5 mx-auto" />
+            </div>
+            <div class="flex-1 absolute md:static p-8 md:p-0 bg-black md:bg-transparent bg-opacity-50 md:text-white  rounded-3xl">
+              <h1 class="text-base md:text-2xl lg:text-4xl xl:text-5xl font-bold">CHICKEN VEGETABLE</h1>
+              <p class="text-xs md:text-base lg:text-xl my-[1px] md:my-2 xl:my-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus nam sunt, delectus ullam maiores?</p>
+              <div class="rating md:rating-lg mb-[2px] md:mb-4 xl:mb-10">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+              </div><br>
+              <button class="btn btn-xs md:btn-sm xl:btn-lg bg-gradient-to-r from-red-900 to-red-700 text-white outline-none border-white uppercase"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2">
+            <a href="#productSlide3" class="btn btn-circle btn-sm text-white border-[1px] border-white bg-transparent  bg-gradient-to-r from-red-900 to-red-700 ">❮</a> 
+            <a href="#productSlide2" class="btn btn-circle btn-sm text-white border-[1px] border-white bg-transparent  bg-gradient-to-r from-red-900 to-red-700 ">❯</a>
+          </div>
+        </div> 
+        <div id="productSlide2" class="carousel-item relative w-full">
+          <div class="flex  justify-center items-center md:gap-5 py-5 text-center md:text-left relative">
+            <div class="flex-1 ">
+              <img src="./images/p2.png" class="w-4/5 mx-auto" />
+            </div>
+            <div class="flex-1 absolute md:static p-8 md:p-0 bg-black md:bg-transparent bg-opacity-50 md:text-white  rounded-3xl">
+              <h1 class="text-base md:text-2xl lg:text-4xl xl:text-5xl font-bold">CHICKEN VEGETABLE</h1>
+              <p class="text-xs md:text-base lg:text-xl my-[1px] md:my-2 xl:my-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus nam sunt, delectus ullam maiores?</p>
+              <div class="rating md:rating-lg mb-[2px] md:mb-4 xl:mb-10">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+              </div><br>
+              <button class="btn btn-xs md:btn-sm xl:btn-lg bg-gradient-to-r from-red-900 to-red-700 text-white outline-none border-white uppercase"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2">
+            <a href="#productSlide1" class="btn btn-circle btn-sm text-white border-[1px] border-white bg-transparent  bg-gradient-to-r from-red-900 to-red-700 ">❮</a> 
+            <a href="#productSlide3" class="btn btn-circle btn-sm text-white border-[1px] border-white bg-transparent  bg-gradient-to-r from-red-900 to-red-700 ">❯</a>
+          </div>
+        </div> 
+        <div id="productSlide3" class="carousel-item relative w-full">
+          <div class="flex  justify-center items-center md:gap-5 py-5 text-center md:text-left relative">
+            <div class="flex-1 ">
+              <img src="./images/p3.png" class="w-4/5 mx-auto" />
+            </div>
+            <div class="flex-1 absolute md:static p-8 md:p-0 bg-black md:bg-transparent bg-opacity-50 md:text-white  rounded-3xl">
+              <h1 class="text-base md:text-2xl lg:text-4xl xl:text-5xl font-bold">CHICKEN VEGETABLE</h1>
+              <p class="text-xs md:text-base lg:text-xl my-[1px] md:my-2 xl:my-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus nam sunt, delectus ullam maiores?</p>
+              <div class="rating md:rating-lg mb-[2px] md:mb-4 xl:mb-10">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+              </div><br>
+              <button class="btn btn-xs md:btn-sm xl:btn-lg bg-gradient-to-r from-red-900 to-red-700 text-white outline-none border-white uppercase"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2">
+            <a href="#productSlide2" class="btn btn-circle btn-sm text-white border-[1px] border-white bg-transparent  bg-gradient-to-r from-red-900 to-red-700 ">❮</a> 
+            <a href="#productSlide4" class="btn btn-circle btn-sm text-white border-[1px] border-white bg-transparent  bg-gradient-to-r from-red-900 to-red-700 ">❯</a>
+          </div>
+        </div> 
+        <div id="productSlide4" class="carousel-item relative w-full">
+          <div class="flex  justify-center items-center md:gap-5 py-5 text-center md:text-left relative">
+            <div class="flex-1 ">
+              <img src="./images/p4.png" class="w-4/5 mx-auto" />
+            </div>
+            <div class="flex-1 absolute md:static p-8 md:p-0 bg-black md:bg-transparent bg-opacity-50 md:text-white  rounded-3xl">
+              <h1 class="text-base md:text-2xl lg:text-4xl xl:text-5xl font-bold">CHICKEN VEGETABLE</h1>
+              <p class="text-xs md:text-base lg:text-xl my-[1px] md:my-2 xl:my-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus nam sunt, delectus ullam maiores?</p>
+              <div class="rating md:rating-lg mb-[2px] md:mb-4 xl:mb-10">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+              </div><br>
+              <button class="btn btn-xs md:btn-sm xl:btn-lg bg-gradient-to-r from-red-900 to-red-700 text-white outline-none border-white uppercase"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2">
+            <a href="#productSlide4" class="btn btn-circle btn-sm text-white border-[1px] border-white bg-transparent  bg-gradient-to-r from-red-900 to-red-700 ">❮</a> 
+            <a href="#productSlide1" class="btn btn-circle btn-sm text-white border-[1px] border-white bg-transparent  bg-gradient-to-r from-red-900 to-red-700 ">❯</a>
+          </div>
+        </div> 
+      </div>
+      <div class="flex justify-center w-full py-2 gap-2 absolute -bottom-2 md:bottom-5">
+        <a href="#productSlide1" class="btn btn-xs bg-gradient-to-r from-red-900 to-red-700 text-white border-[1px] border-white">1</a> 
+        <a href="#productSlide2" class="btn btn-xs bg-gradient-to-r from-red-900 to-red-700 text-white border-[1px] border-white">2</a> 
+        <a href="#productSlide3" class="btn btn-xs bg-gradient-to-r from-red-900 to-red-700 text-white border-[1px] border-white">3</a> 
+        <a href="#productSlide4" class="btn btn-xs bg-gradient-to-r from-red-900 to-red-700 text-white border-[1px] border-white">4</a> 
+      </div>
+    </section>
+    <section id="CATEGORIES" class="my-8 md:my-14 xl:my-24 text-center text-white py-10">
+      <h1 class="text-4xl md:text-6xl xl:text-7xl font-bold mb-5 md:mb-10">CATEGORIES</h1>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 ">
+        <div class="flex justify-between items-center border-4 border-white rounded-3xl px-1 md:px-6 py-3 md:py-10 bg-gradient-to-r from-red-700 hover:scale-105 hover:ease-in-out hover:duration-1000">
+          <div>
+            <h1 class="text-xl md:text-3xl xl:text-4xl font-bold flex-1">PENNE PASTA IN TOMATO SAUCE</h1>
+          </div>
+          <div class="">
+            <img src="./images/p1.png" alt="" class="flex-1">
+          </div>
+        </div>
+        <div class="flex justify-between items-center border-4 border-white rounded-3xl px-1 md:px-6 py-3 md:py-10 bg-gradient-to-r from-red-700 hover:scale-105 hover:ease-in-out hover:duration-1000">
+          <div>
+            <h1 class="text-xl md:text-3xl xl:text-4xl font-bold flex-1">PENNE PASTA IN TOMATO SAUCE</h1>
+          </div>
+          <div class="">
+            <img src="./images/p2.png" alt="" class="flex-1">
+          </div>
+        </div>
+        <div class="flex justify-between items-center border-4 border-white rounded-3xl px-1 md:px-6 py-3 md:py-10 bg-gradient-to-r from-red-700 hover:scale-105 hover:ease-in-out hover:duration-1000">
+          <div>
+            <h1 class="text-xl md:text-3xl xl:text-4xl font-bold flex-1">PENNE PASTA IN TOMATO SAUCE</h1>
+          </div>
+          <div class="">
+            <img src="./images/p3.png" alt="" class="flex-1">
+          </div>
+        </div>
+        <div class="flex justify-between items-center border-4 border-white rounded-3xl px-1 md:px-6 py-3 md:py-10 bg-gradient-to-r from-red-700 hover:scale-105 hover:ease-in-out hover:duration-1000">
+          <div>
+            <h1 class="text-xl md:text-3xl xl:text-4xl font-bold flex-1">PENNE PASTA IN TOMATO SAUCE</h1>
+          </div>
+          <div class="">
+            <img src="./images/p4.png" alt="" class="flex-1">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="ABOUT" class="my-8 md:my-14 xl:my-24 text-center lg:text-left flex flex-col lg:flex-row items-center gap-10 py-5">
+      <div class="flex-1">
+        <img src="images/about.png" alt="">
+      </div>
+      <div class="flex-1 text-white">
+        <h1 class="text-4xl md:text-6xl xl:text-7xl font-bold">ABOUT US</h1>
+        <p class="text-lg md:text-xl py-6 md:py-8 xl:py-10">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING
+            ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET N
+            NCIDIDUNT UT LABORE LACUS VEL FACILISIS.</p>
+        <button class="btn bg-gradient-to-r from-red-900 to-red-700 text-white outline-none border-white uppercase">learn more</button>
+    </div>
+    </section>
+    <section id="LOCATION" class="my-8 md:my-14 xl:my-24 text-center rounded-3xl bg-white px-2 py-10  md:mx-[10%]">
+      <h1 class="text-3xl md:text-5xl xl:text-6xl font-bold text-black">TAKE - OUT SERVICE</h1>
+      <div class="flex flex-col-reverse md:flex-row justify-center items-center md:gap-10 py-5 text-xl md:text-2xl xl:text-3xl text-red-600 font-bold">
+        <p>AVAILABLE DAILY</p>
+        <p class="font-extrabold text-black">o</p>
+        <p>9AM - 12PM</p>
+      </div>
+    </section>
+    <hr><hr><hr>
+  </body>
+  <footer class="footer footer-center p-10 bg-gradient-to-r from-red-950 to-red-700 text-white">
+    <div>
+      <h1 class="uppercase text-xl md:text-3xl xl:text-5xl font-bold">SPICY
+        NOODLES</h1>
+    </div>
+    <div>
+      <p class="font-bold">
+        SPICY NOODLES Industries Ltd. <br/>Providing reliable tech since 1992
+      </p> 
+      <p>Copyright &copy;2023 - All right reserved</p>
+    </div> 
+    <div>
+      <div class="grid grid-flow-col gap-4">
+        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a> 
+        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a> 
+        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+      </div>
+    </div>
+  </footer>
+</html>
